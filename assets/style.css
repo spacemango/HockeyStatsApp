@@ -1,0 +1,93 @@
+html,
+body {
+   min-height: 100%;
+}
+
+a {
+   color: #a8a9b4;
+   text-decoration: none;
+}
+
+#header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 250px;
+   padding: 0 15px;
+   background: #394453;
+   overflow-y: auto;
+}
+
+#header h1 {
+   font-size: 24px;
+   font-weight: 600;
+   text-align-last: center;
+   font-family: "Poppins", sans-serif;
+   color: #fff;
+}
+
+#header hr {
+   height: 2px;
+   color: #fff;
+}
+
+.nav-menu * {
+   margin: 5px;
+   padding: 0;
+   list-style: none;
+}
+.nav-menu>ul>li {
+   position: relative;
+   white-space: nowrap;
+}
+
+#nav-list>li>a {
+   font-size: 18px;
+}
+
+#nav-list>li a:hover,
+ul#team-list>li:hover {
+   text-decoration: none;
+   color: #fff;
+}
+
+ul#team-list,
+ul#team-list>li {
+   font-size: 13px;
+   color: #a8a9b4
+}
+
+ul#team-list>li {
+   padding-bottom: 2px;
+}
+
+.footer {
+   position: relative;
+   align-items: center;
+   text-align: center;
+   bottom: 0;
+   font-size: 15px;
+}
+
+main {
+   position: absolute;
+   left: 250px;
+   padding: 20px;
+   width: 60%;
+   font-size: 14px;
+   text-align: center;
+}
+
+.table th,
+.table td {
+   text-align: center;
+}
+
+#rookie {
+   font-style: oblique;
+}
+
+h2 {
+   font-weight: bold;
+}
