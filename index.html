@@ -17,44 +17,46 @@
 </head>
 
 <body>
-   <header id="header">
-      <div class="d-flex flex-column">
-         <h1 class="mt-3">NHL Stats</h1>
-         <hr class="mt-0 mb-0">
-         <nav id="navbar" class="nav-menu navbar">
+   <div class="row">
+      <header id="header" class="">
+         <div class="flex-column">
+            <h1 class="mt-3">NHL Stats</h1>
+            <hr class="mt-0 mb-0">
+            <nav id="navbar" class="nav-menu navbar">
 
-            <ul id="nav-list">
-               <li id="nav-item"><a href="" id="rookies">Rookies</a></li>
-               <li id="nav-item" class="mb-0 pb-0">
-                  <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-team-list">Teams ></a>
-                  <div class="collapse" id="collapse-team-list">
-                     <ul class="mx-3" id="team-list">
+               <ul id="nav-list">
+                  <li id="nav-item"><a href="" data-page="rookies">Rookies</a></li>
+                  <li id="nav-item" class="mb-0 pb-0">
+                     <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-team-list">Teams ></a>
+                     <div class="collapse" id="collapse-team-list">
+                        <ul class="mx-3" id="team-list">
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
 
-                     </ul>
-                  </div>
-               </li>
-            </ul>
-         </nav>
+         </div>
+         <footer class="footer" id="footer">
+            <hr class="mt-0 mb-0">
+            <p class="text-muted mb-0" id="last-modified"></p>
+            <a href="https://github.com/spacemango/HockeyStatsApp">spacemango @ GitHub</a>
+         </footer>
+      </header>
+      <div class="col">
+         <main>
+            <h2 id="team-name"></h2>
+            <h4 class="mb-3" id="current-season"></h4>
+            <div class="spinner" style="display:none">
+               <h3>Loading...</h3>
+               <div class="spinner-border"></div>
+            </div>
+            <div class="message"></div>
 
+            <div class="container"></div>
+         </main>
       </div>
-      <footer class="footer">
-         <p class="text-muted mb-0" id="last-modified"></p>
-         <p class="text-muted"><a href="https://github.com/spacemango/HockeyStatsApp">spacemango @ GitHub</a></p>
-      </footer>
-   </header>
-
-   <main>
-      <h2 id="team-name"></h2>
-      <h4 class="mb-3" id="current-season"></h4>
-      <div class="spinner" style="display:none">
-         <h3>Loading...</h3>
-         <div class="spinner-border"></div>
-      </div>
-      <div class="message"></div>
-
-      <div class="container">
-      </div>
-   </main>
+   </div>
 </body>
 
 </html>

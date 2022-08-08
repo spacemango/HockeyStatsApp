@@ -1,6 +1,9 @@
 html,
 body {
-   min-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   width: 80%;
 }
 
 a {
@@ -8,15 +11,14 @@ a {
    text-decoration: none;
 }
 
+.row {
+   min-height: 95vmin;
+}
+
 #header {
-   position: fixed;
-   top: 0;
-   left: 0;
-   bottom: 0;
    width: 250px;
-   padding: 0 15px;
    background: #394453;
-   overflow-y: auto;
+   border-radius: 10px;
 }
 
 #header h1 {
@@ -28,7 +30,7 @@ a {
 }
 
 #header hr {
-   height: 2px;
+   height: 3px;
    color: #fff;
 }
 
@@ -46,8 +48,9 @@ a {
    font-size: 18px;
 }
 
-#nav-list>li a:hover,
-ul#team-list>li:hover {
+#nav-list > li a:hover,
+ul#team-list > li:hover,
+.footer > a:hover {
    text-decoration: none;
    color: #fff;
 }
@@ -64,17 +67,20 @@ ul#team-list>li {
 
 .footer {
    position: relative;
+   margin-top: 5px;
    align-items: center;
    text-align: center;
    bottom: 0;
    font-size: 15px;
 }
 
+#footer>hr {
+   height: 1px;
+   color: #777
+}
+
 main {
-   position: absolute;
-   left: 250px;
-   padding: 20px;
-   width: 60%;
+   align-items: normal;
    font-size: 14px;
    text-align: center;
 }

@@ -88,7 +88,9 @@ const createTeamList = async function () {
          .sort((a, b) =>
             a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
          .map(team =>
-            `<li class="team"><a href=""  id="${team.id}">${team.name}</a></li>`)
+            `<li>
+               <a href="" data-team-id="${team.id}">${team.name}</a>
+            </li>`)
          .join('');
 
       teamParentElement.insertAdjacentHTML('afterbegin', markup);

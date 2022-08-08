@@ -1,4 +1,4 @@
-# HockeyStatsApp
+# Hockey Stats App
 
 NHL statistics app that fetches team and rookie statistics from NHL API
 
