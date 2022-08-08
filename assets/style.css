@@ -16,8 +16,8 @@ a {
 }
 
 #header {
-   width: 250px;
-   background: #394453;
+   width: 215px;
+   background: #20395a;
    border-radius: 10px;
 }
 
@@ -81,9 +81,9 @@ ul#team-list>li {
 }
 
 main {
-   align-items: normal;
    font-size: 14px;
    text-align: center;
+   max-width: 750px;
 }
 
 .table th,

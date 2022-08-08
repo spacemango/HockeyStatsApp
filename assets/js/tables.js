@@ -73,6 +73,7 @@ const createBody = function (position) {
 const createPageHeader = async function (id) {
    if (id === 'rookies') {
       teamHeader.innerHTML = `Rookie Statistics`;
+      currentSeason.textContent = `(${stats.getCurrentSeason()})`;
    } else {
       const team = await stats.fetchSingleTeam(id);
       teamHeader.innerHTML = `${team[0].name.toUpperCase()}`;
