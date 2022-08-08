@@ -1,0 +1,4 @@
+$ touch .gitignore
+# VSCode
+.vscode/*
+!.vscode/settings.json
