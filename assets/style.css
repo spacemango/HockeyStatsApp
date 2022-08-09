@@ -12,7 +12,7 @@ a {
 #header {
    width: 215px;
    background: #20395a;
-   border-radius: 10px 0 0 10px;
+   border-radius: 10px 10px 10px 10px;
    z-index: 1;
 }
 
@@ -72,9 +72,8 @@ ul#team-list>li {
 }
 
 #main {
-   /* max-width: 700px; */
    margin-left: -10px;
-   background-color: #f1f7ff;
+   background-color: #eaf3ff;
    border-radius: 0 10px 10px 0;
 }
 
