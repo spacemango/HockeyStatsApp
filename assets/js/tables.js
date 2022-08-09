@@ -24,7 +24,6 @@ const createTable = function (position) {
    table.classList.add(...tableClasses);
    table.setAttribute('id', `${position}-table`);
    let thead = document.createElement('thead');
-   thead.className = 'thead-light';
    thead.setAttribute('id', `${position}-table-header`);
 
    container.insertAdjacentElement('beforeend', header);

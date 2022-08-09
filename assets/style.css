@@ -1,9 +1,15 @@
 html,
 body {
-   margin-left: auto;
+   /* margin-left: auto;
    margin-right: auto;
-   padding: 10px;
-   width: 80%;
+   width: 80%; */
+}
+
+.box {
+   margin: 20px;
+   display: flex;
+   justify-items: center;
+   background-color: #eee;
 }
 
 a {
@@ -11,14 +17,11 @@ a {
    text-decoration: none;
 }
 
-.row {
-   min-height: 95vmin;
-}
-
 #header {
    width: 215px;
    background: #20395a;
-   border-radius: 10px;
+   border-radius: 10px 0 0 10px;
+   z-index: 1;
 }
 
 #header h1 {
@@ -65,13 +68,9 @@ ul#team-list>li {
    padding-bottom: 2px;
 }
 
-.footer {
-   position: relative;
-   margin-top: 5px;
+#footer {
    padding-bottom: 15px;
-   align-items: center;
    text-align: center;
-   bottom: 0;
    font-size: 15px;
 }
 
@@ -80,10 +79,26 @@ ul#team-list>li {
    color: #777
 }
 
+#main {
+   /* max-width: 700px; */
+   margin-left: -10px;
+   background-color: #f1f7ff;
+   border-radius: 0 10px 10px 0;
+}
+
 main {
    font-size: 14px;
    text-align: center;
-   max-width: 750px;
+   padding: 10px;
+   width: 700px;
+}
+
+.table {
+   background-color: white;
+}
+
+thead {
+background-color: #ccc;
 }
 
 .table th,
