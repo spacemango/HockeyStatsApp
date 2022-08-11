@@ -1,7 +1,6 @@
 ## Hockey Stats App
 
 NHL statistics app that fetches player and rookie statistics from NHL API
-
 Languages: Javascript, HTML, CSS
 
 ### Updates:
