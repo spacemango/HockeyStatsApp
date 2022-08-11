@@ -52,7 +52,6 @@ const fetchPlayerStats = async function (playerId) {
       return playerRes.map(person => person.people[0]);
    } catch (err) {
       messageError(err);
-      console.log(err);
       throw (err);
    }
 };
@@ -114,7 +113,7 @@ const getTeamStats = async function (teamId) {
 };
 
 // Returns sorted rookie stats
-// Where player: rookie = true
+// Where player: {rookie: true}
 const getRookieStats = async function () {
    const teams = await fetchTeams();
 
@@ -124,12 +123,18 @@ const getRookieStats = async function () {
    );
 
    // Merge all team arrays and filter rookies
-   const rookies = playerRes.reduce((a, b) => a.concat(b), [])
+   const rookies = playerRes
+      .reduce((a, b) => a.concat(b), [])
       .filter(player => player.rookie);
 
-   // Get current season stats for all rookies
+   // Get current season stats for top 50 skaters and top 10 goalies
    const rookiesStats = await fetchCurrentSeasonStats(rookies);
-   return sortPlayersDefault(rookiesStats);
+   const rookiesSorted = await sortPlayersDefault(rookiesStats);
+
+   let skaters = rookiesSorted.skaters.slice(0, 50);
+   let goalies = rookiesSorted.goalies.slice(0, 10);
+
+   return { skaters, goalies };
 };
 
 // Returns formatted string of current season

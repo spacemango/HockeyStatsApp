@@ -121,7 +121,7 @@ const createSkaters = async function (data) {
          <td>${player.stat.games}</td>
          <td>${player.stat.goals}</td>
          <td>${player.stat.assists}</td>
-         <td>${player.stat.points}</td>
+         <td class="stat-highlight">${player.stat.points}</td>
          <td>${player.stat.plusMinus}</td>
          <td>${player.stat.penaltyMinutes}</td>
       </tr>`;
@@ -151,7 +151,7 @@ const createGoalies = async function (data) {
       <td>${player.stat.goalsAgainst}</td>
       <td>${player.stat.saves}</td>
       <td>${player.stat.shotsAgainst}</td>
-      <td>${(player.stat.savePercentage).toFixed(3)}</td>
+      <td class="stat-highlight">${(player.stat.savePercentage).toFixed(3)}</td>
       <td>${player.stat.shutouts}</td>
    </tr>`;
       parentElement.innerHTML += markupPlayers;

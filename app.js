@@ -1,7 +1,7 @@
 import * as tables from './assets/js/tables.js';
 
 const lastModified = document.querySelector("#last-modified");
-const navItem = document.querySelector('#nav-list');
+const navItem = document.querySelector('#nav-item');
 
 // Date for last modified
 // TODO: Need a fix for dynamically generated page
@@ -25,9 +25,9 @@ const teamsListener = function () {
 const rookiesListener = function () {
    navItem.addEventListener('click', (e) => {
       e.preventDefault();
-
-      const rookies = e.target.closest('[data-page]').dataset.page;
-      tables.createStats(rookies);
+      if (e.target.id === 'rookies') {
+         tables.createStats('rookies');
+      }
    });
 };
 

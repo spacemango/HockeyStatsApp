@@ -35,7 +35,7 @@ export const getJSON = async function (url) {
 // Display error message
 export const messageError = function (msg) {
    document.querySelector('.spinner').style.display = 'none';
-
+   document.querySelector('.message').innerHTML = '';
    document.querySelector('.message').innerHTML = `Sorry there was a problem!<br>
    ${msg}`;
 };
