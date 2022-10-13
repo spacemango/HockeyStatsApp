@@ -4,7 +4,7 @@ import { getJSON, messageError } from './helper.js';
 
 const API_URL_TEAMS = 'https://statsapi.web.nhl.com/api/v1/teams';
 const API_URL_PLAYER = 'https://statsapi.web.nhl.com/api/v1/people/';
-const CURRENT_SEASON = '20212022';
+const CURRENT_SEASON = '20222023';
 
 // Returns stats from a single team
 // @param - teamId from teamsListener() event listener
