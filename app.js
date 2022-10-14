@@ -1,13 +1,15 @@
 import * as tables from './assets/js/tables.js';
 
-const lastModified = document.querySelector("#last-modified");
 const navItem = document.querySelector('#nav-item');
+const teamList = document.querySelector('#team-list');
 
 // Event listeners
 // Team Stats
 const teamsListener = function () {
-   document.querySelector('#team-list').addEventListener('click', (e) => {
+   teamList.addEventListener('click', (e) => {
       e.preventDefault();
+
+      if (isNaN(e.target.dataset.teamId)) return;
 
       const { teamId } = e.target.dataset;
       tables.createStats(+teamId);
